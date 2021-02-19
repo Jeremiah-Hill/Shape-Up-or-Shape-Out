@@ -1,0 +1,79 @@
+* {
+    font-family: monospace;
+    font-size: 1.05em;
+}
+
+body {
+    background-color: #93a1a1;
+}
+
+#container {
+    margin: 2% auto;
+    width: 960px;
+}
+
+#controls {
+    position: relative;
+    background-color: lightgrey;
+    border: 1px solid grey;
+}
+#controls > div > * {
+    margin: 1%;
+    padding: 1%;
+}
+#controls > div > button {
+    float: right;
+}
+
+#canvas {
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    width: 600px;
+    height: 600px;
+    background-color: black;
+}
+
+#info {
+    float: right;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    position: relative;
+    margin-top: 10px;
+    min-width: 300px;
+    min-height: 600px;
+    background-color: lightgrey;
+    font-size: 1.2em;
+}
+#info > div {
+    margin: 2%;
+    margin-left: 5%;
+    padding: 2%;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    background: purple;
+    opacity: 50%;
+    border: 2px solid black;
+}
+.square {
+    position: absolute;
+    background: red;
+    opacity: 50%;
+    border: 2px solid black;
+}
+.triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 50%;
+}
+.rectangle {
+    position: absolute;
+    background: green;
+    opacity: 50%;
+    border: 2px solid black;
+}
